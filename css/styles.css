@@ -118,12 +118,28 @@ a {
   letter-spacing: 0.02em;
 }
 
-.page-footer,
-.hero {
+.page-footer {
   background-color: #2e2f42;
 }
 
+/*section hero*/
+
+.hero {
+  display: block;
+  padding: 188px 472px;
+  background-color: #2e2f42;
+  text-align: center;
+}
+
+.hero-container {
+  display: block;
+}
+
 .hero-title {
+  display: block;
+  width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
@@ -136,6 +152,11 @@ button {
 }
 
 .btn {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  min-height: 56px;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -152,12 +173,28 @@ button {
 
 /* #region benefits */
 
+.benefits,
+.team {
+  padding: 120px 0;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.benefits-item {
+  width: 264px;
+}
+
 .benefits-title {
   font-size: 20px;
   line-height: 1.2;
 }
 
 .benefits-subtitle {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -177,11 +214,12 @@ button {
 }
 
 .team {
+  padding: 120px 0;
   background-color: #f4f4fd;
 }
 
-.team-title,
-.portfolio-title {
+.team-title {
+  display: block;
   text-transform: capitalize;
   text-align: center;
   font-size: 36px;
@@ -206,6 +244,19 @@ button {
 }
 
 /* #region portfolio */
+
+.portfolio {
+  padding: 120px 0;
+}
+
+.portfolio-title {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
 
 .portfolio-subtitle {
   font-weight: 500;
