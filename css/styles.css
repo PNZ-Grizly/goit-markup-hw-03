@@ -117,7 +117,7 @@ a {
 
 .hero {
   display: block;
-  padding: 188px 472px;
+  padding: 188px 0px;
   background-color: #2e2f42;
   text-align: center;
 }
@@ -128,7 +128,7 @@ a {
 
 .hero-title {
   display: block;
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto 48px;
   font-size: 56px;
   line-height: 1.07;
@@ -142,7 +142,10 @@ button {
 }
 
 .btn {
-  display: inline-block;
+  margin: auto;
+  border: none;
+  height: 56px;
+  display: block;
   border-radius: 4px;
   padding: 16px 32px;
   min-width: 169px;
@@ -162,6 +165,19 @@ button {
 }
 
 /* #region benefits */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .benefits,
 .team {
@@ -230,7 +246,7 @@ button {
 }
 
 .team-subtitle {
-  margin: 32px 0 8px;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -239,8 +255,11 @@ button {
   color: #2e2f42;
 }
 
+.team-personal {
+  padding: 32px 0;
+}
+
 .team-text {
-  margin-bottom: 32px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
@@ -291,6 +310,7 @@ button {
 }
 
 .portfolio-subtitle {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -305,7 +325,6 @@ button {
 }
 
 .portfolio-text {
-  margin-top: 8px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
